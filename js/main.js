@@ -1,10 +1,10 @@
-import { news, smCardData, hero } from './data.js';
+import { news, smCardData, hero, mediaData } from './data.js';
 
 const listContainer = document.querySelector(".card-list");
 const heroBg= document.querySelector(".hero-bg");
 const heroImg= document.getElementById("select-hero-img");
 const heroCards= document.querySelector(".hero-cards");
-
+const mediaClips =document.getElementById("media-clips");
 
 
 
@@ -68,4 +68,9 @@ smCardData.forEach(data => {
 });
 
 
-
+mediaData.forEach(media => {
+  let mediaCard = document.createElement("div");
+  mediaCard.classList.add("media-clips");
+  mediaCard.innerHTML = `<img src="${media.img}" alt="News clip" />`;
+  mediaClips.appendChild(mediaCard);
+});

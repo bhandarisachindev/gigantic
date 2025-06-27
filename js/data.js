@@ -236,3 +236,16 @@ export const smCardData = [
     img: "/assets/hero/sm/timg_ezren_Hover.jpg",
   }
 ];
+
+export const mediaData =[
+  
+  {img:"../assets/media/news1.avif"},
+  {img:"../assets/media/news2.avif"},
+  {img:"../assets/media/news3.avif"},
+  {img:"../assets/media/news4.avif"},
+  {img:"../assets/media/news5.avif"},
+  {img:"../assets/media/news6.avif"},
+  {img:"../assets/media/news7.avif"},
+  {img:"../assets/media/news8.avif"},
+  {img:"../assets/media/news9.avif"}
+]

@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gigantic</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/components.css">
-  
 
 </head>
 <body>
@@ -16,34 +16,25 @@
   <news-section></news-section>
   <explore-section></explore-section>
   <select-hero></select-hero>
-
-  <div class="gurdians-main">
-    <div class="gurdians-section">
-      <img id="gurdian-left" src="/assets/griffin.avif" alt="">
-      <img id="gurdian-right" src="/assets/naga.avif" alt="">
-      <img id="gurdian-bottom" src="/assets/bgsmallbtm.png">
-
-      <div class="gurdian-text">
-        <h3>GUARDIANS</h3>
-        <h5>Smart, Responsive, and Lethal</h5>
-        <p>Your guardian is the biggest ally you'll ever have. With your team's help, the guardian drives back your enemies, destroying and reshaping the battlefield as it goes. But your enemies have a guardian, too...</p>
-        <h5>The Ultimate Objective  </h5>
-        <p>Work together to overpower the enemy guardian, then strike its heart when you have the chance. And beware! Each guardian has its own attacks and tactics—everything from impaling tail spikes to destructive tornadoes.</p>
-      </div>
-    </div>
-    <div class="creatures">
-      <div class="creatures-text">
-        <h3>CREATURES</h3>
-        <h5>Control the Battleground</h5>
-        <p>As you battle, you can summon creatures to protect key strategic points of the map for your team—and each creature you summon makes your massive guardian grow stronger.</p>
-        <h5>Summon the Right Ally</h5>
-        <p>The creatures you summon do more than just attack your enemies. You can choose creatures that heal your team, boost your damage, spot hidden enemies, or let you resurrect closer to the action.</p>
-      </div>
-      <div class="creatures-img">
-        <img id="creature-one" src="/assets/Creatures.avif" alt="creatures">
+  <gurdians-main></gurdians-main>
+  <media-section></media-section>
+  <community-section></community-section>
+  <div class="bottom-bar">
+    <div class="bottom-bar-top"></div>
+    <div class="bottom-bar-bottom">
+      <img src="/assets/motigaLOgo.avif" alt="">
+      <div class="bottom-bar-text">
+        <p>Gigantic is made with love by Motiga, an independent game studio in Bellevue, WA.</p>
+        <span id="bottom-bar-btn"><b>LEARN MORE ABOUT US</b></span>
+        <span >
+          <p>Copyright © 2014 Motiga, Inc. - All Rights Reserved.</p>
+          <p>Motiga and Gigantic are trademarks, services marks, or registered trademarks of Motiga, Inc.</p>
+        </span>
+        <p id="bottom-bar-last"> <span> Privacy Policy </span> | <span> Terms of Service </span> | Press Inquiries: <span> press@motiga.com </span> </p>
       </div>
     </div>
   </div>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
   <script type="module" src="js/components.js"></script>

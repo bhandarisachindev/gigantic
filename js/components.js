@@ -112,8 +112,102 @@ class selectHero extends HTMLElement{
 }}
 
 
+class gurdians extends HTMLElement{
+    constructor(){
+      super()
+      this.innerHTML=`<div class="gurdians-main">
+    <div class="gurdians-section">
+      <img id="gurdian-left" src="/assets/griffin.avif" alt="">
+      <img id="gurdian-right" src="/assets/naga.avif" alt="">
+      <img id="gurdian-bottom" src="/assets/bgsmallbtm.png">
 
+      <div class="gurdian-text">
+        <h3>GUARDIANS</h3>
+        <h5>Smart, Responsive, and Lethal</h5>
+        <p>Your guardian is the biggest ally you'll ever have. With your team's help, the guardian drives back your enemies, destroying and reshaping the battlefield as it goes. But your enemies have a guardian, too...</p>
+        <h5>The Ultimate Objective  </h5>
+        <p>Work together to overpower the enemy guardian, then strike its heart when you have the chance. And beware! Each guardian has its own attacks and tactics—everything from impaling tail spikes to destructive tornadoes.</p>
+      </div>
+    </div>
+    <div class="creatures">
+      <div class="creatures-text">
+        <h3>CREATURES</h3>
+        <h5>Control the Battleground</h5>
+        <p>As you battle, you can summon creatures to protect key strategic points of the map for your team—and each creature you summon makes your massive guardian grow stronger.</p>
+        <h5>Summon the Right Ally</h5>
+        <p>The creatures you summon do more than just attack your enemies. You can choose creatures that heal your team, boost your damage, spot hidden enemies, or let you resurrect closer to the action.</p>
+      </div>
+      <div class="creatures-img">
+        <img id="creature-one" src="/assets/Creatures.avif" alt="creatures">
+      </div>
+    </div>
+  </div>`
+}}
 
+class mediaSection extends HTMLElement{
+    constructor(){
+      super()
+      this.innerHTML=`<div class="media">
+    <div id="media-top"></div>
+
+    <div class="media-main">
+      <div class="media-clip-container">
+        <p><b>MEDIA</b></p>
+        <span>
+          <i class="ri-computer-line"></i>
+          <i class="ri-image-fill"></i>
+          <i class="ri-play-fill"></i>
+        </span>
+      </div>
+      <div id="media-clips" class="media-clips">
+      </div>
+    </div>
+  </div>`
+}}
+
+class community extends HTMLElement{
+  constructor(){
+    super()
+    this.innerHTML=`<div class="community">
+    <div class="community-top"></div>
+      <div class="community-content">
+        <div class="community-contenty-text">
+          <h3>BE A PART OF SOMETHING GIGANTIC</h3>
+          <p><b>We're building Gigantic alongside our community members, who have been giving us advice, ideas, and perspective every step of the way. We want to hear your voice, too!</b></p>
+        <div >
+          <div class="community-inside">
+            <div class="community-inside-div">
+              <h5>Sign Up for News</h5>
+              <p>This is just the first glimpse of Gigantic — as we keep building the game, we'll have lots more to share. Get our newsletter, and you won't miss a thing.</p>
+            </div>
+            <div class="community-inside-div">
+              <h5>Connect with Us</h5>
+              <p>Get in on the ground floor! Connect with other Gigantic fans and talk directly with the developers of Gigantic.</p>
+            </div>
+            <div class="community-inside-div">
+              <h5>Download the Fan Kit</h5>
+              <p>Heroes, wallpapers, icons, logos —this collection of media is all yours. Use it to show the world something Gigantic!</p>
+            </div>
+          </div>
+        </div>
+        <div class="register">
+            <span class="register-input"> <input type="text" placeholder="Type your email address"> <span class="register-btn" >GO!</span></span>
+            <div class="register-icons">
+              <i class="ri-twitter-x-line"></i>
+              <i class="ri-facebook-fill"></i>
+              <i class="ri-youtube-fill"></i>
+            </div>
+            <span class="register-btn">DOWNLOAD</span>
+        </div>
+      </div>
+    </div>
+  </div>`
+  }
+}
+
+customElements.define("community-section",community);
+customElements.define("media-section",mediaSection);
+customElements.define("gurdians-main",gurdians);
 customElements.define("select-hero",selectHero);
 customElements.define("top-bar",topBar);
 customElements.define("hero-section",heroSection);
