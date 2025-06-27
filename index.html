@@ -11,80 +11,43 @@
 
 </head>
 <body>
-  <div id="nav-bar">
-    <div id="link-bar">
-    <p class="nav-links">News</p>
-    <p class="nav-links">Explore</p>
-    <p class="nav-links">Media</p>
-    <p class="nav-links">Community</p>
-    </div>  
-    <button id="nav-btn">SIGN UP FOR ALPHA!</button>
-  </div>
-  <div id="hero">
-    <div id="hero-div">
-        <img id="logo" src="assets/logo.png">
-      <p class="hero-text">
-      A team action game where heroes battle alongside a<br>
-      <span > massive guardian in a fight for supremacy. Join the</span><br>
-      fight and be one of the first to try <em>Gigantic!</em>
-      </p>
-      <div class="hero-btn">
-        WATCH THE VIDEO
-        <span class="shine"></span>
-    </div>
-    </div>
-  </div>
-  <div id="news">
-    <div class="container swiper">
-      <div class="wrapper">
-        
-        <div class="card-list swiper-wrapper"></div>
-        
-      </div>
-      <img class="swipe swiper-button-next" src="assets/arrow.png" >
-      <img class="swipe swiper-button-prev" src="assets/arrow.png" >
-    </div>
-  </div>  
-  <div id="explore">
-    <div class="explore-gre"  id="immense">
-      <div class="explore-card">
-        <div class="explore-text">
-        <h3>IMMENSE</h3>
-        <h4>Unleash Your Power</h4>
-        <p class="explore-card-des">A mystical bond connects you and four teammates to your guardian, a magical behemoth too powerful for a single mortal to defeat. <b>Protect your guardian</b> as your team charges across the battlefield, then see it <b>crush your enemies</b> underfoot.</p>
-      </div>
-      <img class="explore-card-img" src="/assets/hand.avif" alt="IMMENSE"> 
-      </div>
-    </div>
-    <div class="explore-gre"  id="tactical">
-      <div class="explore-card explore-card-tac">
-        <img class="explore-card-img" src="/assets/cat2.png" alt="TACTICAL">
-        <div class="explore-text">
-        <h3>TACTICAL</h3>
-        <h4>Unleash Your Creativity</h4>
-        <p class="explore-card-des"><b>Physics-based abilities</b> let you invent new ways to amaze your friends and frustrate your enemies. The  <b>element of surprise</b> is key as you use WASD controls to sprint, dodge, aim, destroy barriers, hurdle obstacles, and leap from danger to safety.</p>
-      </div>
-      </div>
-    </div>
-    <div class="explore-gre" id="fantastic">
-      <div class="explore-card explore-card-fan">
-        <div class="explore-text">
-        <h3>FANTASTIC</h3>
-        <h4>Unleash Your Imagination</h4>
-        <p class="explore-card-des">The world of Gigantic is a world of mystery, where airships soar over ancient ruins and a fantasy empire  <b>is yours for the taking</b>. Charge into battle and lead your guardian to victory. Gigantic rewards the <b>daring, the clever, and the swift</b>.</p>
-      </div>
-      <img class="explore-card-img" src="/assets/bull.png" alt="FANTASTIC">
-      </div>
-    </div>
-  </div>
-    <div class="hero-gallary">
+  <top-bar></top-bar>
+  <hero-section></hero-section>
+  <news-section></news-section>
+  <explore-section></explore-section>
+  <select-hero></select-hero>
 
-    </div>
+  <div class="gurdians-main">
+    <div class="gurdians-section">
+      <img id="gurdian-left" src="/assets/griffin.avif" alt="">
+      <img id="gurdian-right" src="/assets/naga.avif" alt="">
+      <img id="gurdian-bottom" src="/assets/bgsmallbtm.png">
 
+      <div class="gurdian-text">
+        <h3>GUARDIANS</h3>
+        <h5>Smart, Responsive, and Lethal</h5>
+        <p>Your guardian is the biggest ally you'll ever have. With your team's help, the guardian drives back your enemies, destroying and reshaping the battlefield as it goes. But your enemies have a guardian, too...</p>
+        <h5>The Ultimate Objective  </h5>
+        <p>Work together to overpower the enemy guardian, then strike its heart when you have the chance. And beware! Each guardian has its own attacks and tactics—everything from impaling tail spikes to destructive tornadoes.</p>
+      </div>
+    </div>
+    <div class="creatures">
+      <div class="creatures-text">
+        <h3>CREATURES</h3>
+        <h5>Control the Battleground</h5>
+        <p>As you battle, you can summon creatures to protect key strategic points of the map for your team—and each creature you summon makes your massive guardian grow stronger.</p>
+        <h5>Summon the Right Ally</h5>
+        <p>The creatures you summon do more than just attack your enemies. You can choose creatures that heal your team, boost your damage, spot hidden enemies, or let you resurrect closer to the action.</p>
+      </div>
+      <div class="creatures-img">
+        <img id="creature-one" src="/assets/Creatures.avif" alt="creatures">
+      </div>
+    </div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
-  <script src="js/gsap.js"></script>
   <script type="module" src="js/components.js"></script>
   <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/gsap.js"></script>
   </body>
 </html> 
