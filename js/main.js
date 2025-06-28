@@ -57,13 +57,18 @@ smCardData.forEach(data => {
     const name = smCard.querySelector("span").textContent;
 
     const fullData = getHeroByName(name);
-    console.log("Full hero data:", fullData.name.toUpperCase());
     document.getElementById("hero-name").innerHTML=fullData.name.toUpperCase();
     document.getElementById("hero-type").innerHTML=fullData.type;
     document.getElementById("hero-discription").innerHTML=fullData.info;
 
     document.querySelector(".hero-bg").setAttribute("src",fullData.bg);
     document.getElementById("select-hero-img").setAttribute("src",fullData.img);
+
+      gsap.fromTo(
+    ["#hero-name", "#hero-type", "#hero-discription"],  
+    { x: 200, opacity: 0 },                             
+    { x: 0, opacity: 1, duration: 0.6, ease: "power2.out", stagger: 0.1 }
+  );
   });
 });
 

@@ -176,24 +176,12 @@ export const smCardData = [
     img: "/assets/hero/sm/timg_hk-206_Hover.jpg",
   },
   {
-    name: "Xenobia",
-    img: "/assets/hero/sm/timg_xenobia_Hover.jpg",
-  },
-  {
     name: "Tyto the Swift",
     img: "/assets/hero/sm/timg_tytotheswift_Hover.jpg",
   },
   {
     name: "Beckett",
     img: "/assets/hero/sm/timg_beckett_Hover.jpg",
-  },
-  {
-    name: "Uncle Sven",
-    img: "/assets/hero/sm/timg_unclesven_Hover.jpg",
-  },
-  {
-    name: "Charnok",
-    img: "/assets/hero/sm/timg_charnok_Hover.jpg",
   },
   {
     name: "Voden",

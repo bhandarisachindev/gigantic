@@ -3,14 +3,14 @@ class topBar extends HTMLElement{
       super()
       this.innerHTML=`<div id="nav-bar">
     <div id="link-bar">
-    <p class="nav-links">News</p>
-    <p class="nav-links">Explore</p>
-    <p class="nav-links">Media</p>
-    <p class="nav-links">Community</p>
+    <p class="nav-links" data-target="#news">News</p>
+    <p class="nav-links" data-target="#explore">Explore</p>
+    <p class="nav-links" data-target=".media">Media</p>
+    <p class="nav-links" data-target=".community">Community</p>
     </div>  
-      <div id="nav-btn" >
+      <div id="nav-btn" class="shine-gray-btn">
         SIGN UP FOR ALPHA!
-        <span class="shine1"></span>
+        <span class="shine-gray"></span>
       </div>
   </div>`
 }}
@@ -191,13 +191,13 @@ class community extends HTMLElement{
           </div>
         </div>
         <div class="register">
-            <span class="register-input"> <input type="text" placeholder="Type your email address"> <span class="register-btn" >GO!</span></span>
+            <span class="register-input"> <input type="text" placeholder="Type your email address"> <span class="register-btn shine-gray-btn" >GO!<span class="shine-gray"></span></span></span>
             <div class="register-icons">
-              <i class="ri-twitter-x-line"></i>
-              <i class="ri-facebook-fill"></i>
-              <i class="ri-youtube-fill"></i>
+              <i class="ri-twitter-x-line shine-gray-btn"><span class="shine-gray"> </i>
+              <i class="ri-facebook-fill shine-gray-btn"><span class="shine-gray"> </i>
+              <i class="ri-youtube-fill shine-gray-btn"> <span class="shine-gray"></i>
             </div>
-            <span class="register-btn">DOWNLOAD</span>
+            <span class="register-btn shine-gray-btn">DOWNLOAD<span class="shine-gray"></span></span>
         </div>
       </div>
     </div>
